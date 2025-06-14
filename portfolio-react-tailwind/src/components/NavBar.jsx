@@ -40,7 +40,7 @@ export default function NavBar() {
             className="w-20 h-20 rounded-lg border border-[#eaeaea] shadow me-3"
           />
           <div>
-            <h1 className="text-xl font-bold text-gray-800">Hero B</h1>
+            <h1 className="text-xl font-bold text-gray-800">Hero B.</h1>
             <p className="text-xs text-gray-600">Frontend Developer / Student</p>
             <a
               href="mailto:hero.baceles.cln@gmail.com?subject=Hello%20Hero&body=Hi%20there,%20I%20wanted%20to%20reach%20out..."
