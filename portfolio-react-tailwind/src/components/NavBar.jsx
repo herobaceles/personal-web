@@ -29,33 +29,30 @@ export function CurrentTime() {
 
 export default function NavBar() {
   return (
-    <header className="bg-white flex justify-center my-5 px-4">
+    <header className="bg-white flex justify-center my-2 px-4 py-2">
       <nav className="flex justify-between items-center w-200 container gap-4">
-        
+
         {/* Left - Profile Info */}
         <div className="flex items-center">
           <img
             src={profile}
             alt="Profile"
-            className="w-30 h-30 rounded-lg border border-[#eaeaea] shadow me-4"
+            className="w-20 h-20 rounded-lg border border-[#eaeaea] shadow me-3"
           />
           <div>
-            <h1 className="text-2xl font-bold text-gray-800">Hero B</h1>
-            <p className="text-sm text-gray-600">Backend Developer / Student</p>
-            <button className="mt-2 px-4 py-1 text-xs bg-black text-white rounded hover:bg-gray-800 transition">
+            <h1 className="text-xl font-bold text-gray-800">Hero B</h1>
+            <p className="text-xs text-gray-600">Frontend Developer / Student</p>
+            <a
+              href="mailto:hero.baceles.cln@gmail.com?subject=Hello%20Hero&body=Hi%20there,%20I%20wanted%20to%20reach%20out..."
+              className="mt-1 inline-block px-3 py-1 text-xs bg-black text-white rounded hover:bg-gray-800 transition"
+            >
               Send Email
-            </button>
+            </a>
           </div>
         </div>
 
-        {/* Center - Clock & Location */}
-        <div className="text-center">
-          <CurrentTime />
-          <p className="text-xs text-gray-500">Manila, Philippines</p>
-        </div>
-
-        {/* Right - Swiper Slider (larger image) */}
-        <div className="w-36 h-24 hidden sm:block">
+        {/* Right - Swiper Slider (smaller) */}
+        <div className="w-28 h-20 hidden sm:block">
           <Swiper
             modules={[Autoplay]}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
