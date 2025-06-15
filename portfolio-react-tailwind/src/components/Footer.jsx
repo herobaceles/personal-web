@@ -11,7 +11,7 @@ export default function Footer(){
         <div className="my-5 text-center">
         <footer className="">
             
-            <p>&copy; {currentYear}  HeroB. All Rights Reserved</p>
+            <p>&copy; {currentYear}  HeroB. All Rights Reserved.</p>
         </footer>
         </div>
         </>
